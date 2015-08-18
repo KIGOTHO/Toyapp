@@ -15,7 +15,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
       
-     
+        //details for the widgets
+        RelativeLayout.LayoutParams buttonDetails = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+                );
+        RelativeLayout.LayoutParams inputDetails = new RelativeLayout.LayoutParams(
+                RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT
+        );
         //rules for positioning widgets
         buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
         buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
