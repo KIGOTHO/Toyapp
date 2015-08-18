@@ -5,7 +5,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.util.Log;
-
+import android.widget.RelativeLayout;
+import android.widget.Button;
+import android.graphics.Color;
+import android.widget.EditText;
+import android.content.res.Resources;
+import android.util.TypedValue;
 
 
 public class MainActivity extends ActionBarActivity {
