@@ -16,7 +16,20 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
       
      
-      
+        //density independent pixels(device pixels)
+        Resources r = getResources();//get info about app
+        int px = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,200,r.getDisplayMetrics());//convert dip to px
+
+
+        username.setWidth(px);
+        //add widgets to the layout
+        mylayout.addView(redButton,buttonDetails);
+        mylayout.addView(username,inputDetails);
+        //add the layout to the main activity
+        setContentView(mylayout);
+
+        Log.i(TAG, "onCreate");
+    }
 
     @Override
     protected void onStart() {
