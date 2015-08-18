@@ -15,6 +15,9 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
       
+        //input widget
+        EditText username = new EditText(this);
+        //setId's
         //details for the widgets
         RelativeLayout.LayoutParams buttonDetails = new RelativeLayout.LayoutParams(
                 RelativeLayout.LayoutParams.WRAP_CONTENT,
