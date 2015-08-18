@@ -16,6 +16,14 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
       
      
+        //rules for positioning widgets
+        buttonDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        buttonDetails.addRule(RelativeLayout.CENTER_VERTICAL);
+
+        inputDetails.addRule(RelativeLayout.ABOVE,redButton.getId());
+        inputDetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        inputDetails.setMargins(0,0,0,50);
+
         //density independent pixels(device pixels)
         Resources r = getResources();//get info about app
         int px = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,200,r.getDisplayMetrics());//convert dip to px
