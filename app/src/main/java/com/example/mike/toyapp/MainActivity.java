@@ -18,7 +18,10 @@ public class MainActivity extends ActionBarActivity {
         RelativeLayout mylayout = new RelativeLayout(this);
        mylayout.setBackgroundColor(Color.GREEN);
 
-       
+        //button widget
+        Button redButton = new Button(this);
+        redButton.setText("click here bucky");
+        redButton.setBackgroundColor(Color.RED);
         //input widget
         EditText username = new EditText(this);
         //setId's
