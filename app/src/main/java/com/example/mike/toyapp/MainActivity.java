@@ -14,7 +14,11 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      
+        //Layout
+        RelativeLayout mylayout = new RelativeLayout(this);
+       mylayout.setBackgroundColor(Color.GREEN);
+
+       
         //input widget
         EditText username = new EditText(this);
         //setId's
